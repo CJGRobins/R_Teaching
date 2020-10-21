@@ -1,0 +1,24 @@
+{
+    "id": "2115E542",
+    "path": "~/R Model/R_Teaching/Teaching Script 1.R",
+    "project_path": "Teaching Script 1.R",
+    "type": "r_source",
+    "hash": "3713683068",
+    "contents": "",
+    "dirty": false,
+    "created": 1603306691716.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "25,0",
+        "scrollLine": "0"
+    },
+    "folds": "0|11|82|0|\n83|11|125|0|\n",
+    "lastKnownWriteTime": 1603304974,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1603306696841,
+    "read_only": false,
+    "read_only_alternatives": []
+}
