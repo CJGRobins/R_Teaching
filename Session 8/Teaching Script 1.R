@@ -454,6 +454,5 @@ plot(mod, y = "i.prev", main = "Percent Infected", ylim = c(0, 0.5), legend = "f
 #more prevalent in our cases than out controls?
 
 
-#git hub
 
 
