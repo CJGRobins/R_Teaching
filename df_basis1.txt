@@ -1,6 +1,0 @@
-ID <- sample(1:100, 100)
-Hb <- rnorm(100, 150, 10)
-WCC <- rep(4:13, 10)
-Time_in_hosp <- rpois(100, lambda = 4)
-Date_of_admission <- Sys.Date() + sort(sample(1:100, 100))
-Ward <- rep(c("Frensham", "Clandon", "Ewhurst", "Bramshott", "Compton"), 20)
