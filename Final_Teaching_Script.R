@@ -98,7 +98,7 @@ ggplot(data = Hb_table) +
   geom_point(aes(x = ID, y = Hb)) +
   geom_smooth(aes(x = ID, y = Hb))
 new
-hospital_occupancy <- read.csv("hospital_in_out.csv")
+hospital_occupancy <- read.csv("Datasets/hospital_in_out.csv")
 hospital_occupancy$new_date <-
   as.POSIXct(hospital_occupancy$new_date, tz = "", "%d/%m/%Y %H:%M")
 example1 <-
@@ -131,7 +131,7 @@ spec_date_covid <-
   hospital_occupancy %>% filter(Date_value == "27/05/2020") %>%
   summarise(mean(COVID))
 
-daily_admissions <- read.csv("daily_admissions.csv")
+daily_admissions <- read.csv("Datasets/daily_admissions.csv")
 daily_admissions$Admission.Date <-
   as.Date(daily_admissions$Admission.Date, format = "%d/%m/%Y")
 daily_admissions2 <-
@@ -165,7 +165,7 @@ library(EpiStats)
 library(markdown)
 library(knitr)
 
-smok_dta <- read.csv("test_smoking.csv")
+smok_dta <- read.csv("Datasets/test_smoking.csv")
 smok_pub <-
   CCInter(smok_dta,
           cases = "lung_ca",
@@ -349,7 +349,7 @@ library(haven)
 library(foreach)
 
 #import data
-uganda_lrti_first <- read_dta("~/Old Laptop (to sort)/LSHTM LECTURES/ASME/PREMODULE +ASSESSMENT/uganda.lrti.first.dta")
+uganda_lrti_first <- read_csv("Datasets/uganda.lrti.first.csv")
 
 #create your first a priori model of association and examine it
 apmodel <- glm(lrti ~ malaria + magegp + hhsesgp + sex, family = "binomial", data = uganda_lrti_first)
