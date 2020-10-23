@@ -435,7 +435,7 @@ param <- param.dcm(R0 = c(1.5, 1.9, 2.3), e.dur = 10, i.dur = 14, cfr = 0.5)
 init <- init.dcm(s.num = 1e6, e.num = 10, i.num = 0, r.num = 0,
                  se.flow = 0, ei.flow = 0, ir.flow = 0, d.flow = 0)
 
-#create the steering tools of your determanistic compartmental model
+#create the steering tools of your deterministic compartmental model
 control <- control.dcm(nsteps = 3000, dt = 1, new.mod = SEIR)
 
 #run the DCM with the params inits and controls
