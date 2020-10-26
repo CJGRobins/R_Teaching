@@ -379,7 +379,7 @@ foreach(i = 1:length(models)) %do% {
 
 r0 <- seq(1,10, by = 0.001)
 fraction_vac <- (1-(1/r0))
-vac_eff <- 0.5
+vac_eff <- 0.8
 adjusted_fracvac <- fraction_vac/vac_eff
 vaccine <- tibble(r0, fraction_vac, adjusted_fracvac)
 ggplot(vaccine) +
@@ -427,7 +427,7 @@ SEIR <- function(t, t0, parms) {
 #Here you set the parameters of your model, based on the natural history of the disease
 #by putting there to be 3 values of r0 the model will run three times based on these parameters
 #any number of these can be changed and 
-param <- param.dcm(R0 = c(1.5, 1.9, 2.3), e.dur = 10, i.dur = 14, cfr = 0.5)
+param <- param.dcm(R0 = 3.5, e.dur = 10, i.dur = 14, cfr = c(0.4,0.6,0.8))
 
 #The initial conditions vary based on the population you're in
 #This is a simple model so doesn't include young and old, and different beta values for them
